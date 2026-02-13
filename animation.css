@@ -1,0 +1,48 @@
+.animation_weapper{
+    width: 50%;
+    height: 600px;
+    background-color: #c2d1f0;
+    position: relative;
+    margin: auto;
+    top: 50px;
+}
+.animation{
+    position: absolute;
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    animation-name: animation_div,move;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+@keyframes animation_div{
+0%{
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+}
+25%{
+        background-color:black ;
+    height:200px;
+    width: 200px;
+}
+50%{
+        background-color: green;
+    height: 200px;
+    width: 200px;
+}
+100%{
+        background-color:red ;
+    height: 100px;
+    width: 75px;
+}
+}
+@keyframes move{
+   from{top: 0px;}
+   to{top: 300px;}
+   
+}
